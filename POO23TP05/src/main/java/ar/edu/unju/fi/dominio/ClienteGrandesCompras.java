@@ -1,10 +1,16 @@
 package ar.edu.unju.fi.dominio;
 
+import java.util.ArrayList;
+
+import ar.edu.unju.fi.util.Constante;
+
 public class ClienteGrandesCompras extends Cliente {
 	/**
 	 * tienen un determinado descuento
 	 */
-	double porcentajeDescuento = 0.5;
+	private double porcentajeDescuento;
+	
+	public static Constante constante = new Constante();
 
 	public ClienteGrandesCompras() {
 		super();
@@ -14,7 +20,7 @@ public class ClienteGrandesCompras extends Cliente {
 	public ClienteGrandesCompras(long dni, String nombre, String eMail, String localidad) {
 		super(dni, nombre, eMail, localidad);
 
-		this.porcentajeDescuento = porcentajeDescuento;
+		this.porcentajeDescuento = constante.PORCENTAJE_DESCUENTO;
 	}
 
 	public double getPorcentajeDescuento() {

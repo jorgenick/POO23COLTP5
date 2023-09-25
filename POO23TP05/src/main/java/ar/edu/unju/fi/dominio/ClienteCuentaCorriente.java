@@ -1,24 +1,29 @@
 package ar.edu.unju.fi.dominio;
 
+import java.util.ArrayList;
+
+import ar.edu.unju.fi.util.Constante;
+
 public class ClienteCuentaCorriente extends Cliente {
 	/**
 	 * tienen la posibilidad de retirar materiales a cuenta con un tope de dinero
 	 */
 
-	public long montoMensualAFavor = 5000;
+	public double montoMensualAFavor;
+	
+	public static Constante constate = new Constante();
 
 	public ClienteCuentaCorriente() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public ClienteCuentaCorriente(long dni, String nombre, String eMail, String localidad) {
 		super(dni, nombre, eMail, localidad);
 
-		this.montoMensualAFavor = montoMensualAFavor;
+		this.montoMensualAFavor = constate.MONTO_TOPE;
 	}
 
-	public long getMontoMensualAFavor() {
+	public double getMontoMensualAFavor() {
 		return montoMensualAFavor;
 	}
 

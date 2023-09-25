@@ -15,24 +15,24 @@ public class ClienteManager {
 	private static List<Cliente> listaClientes = new ArrayList<Cliente>();
 	private static List<Compra> listaCompras = new ArrayList<Compra>();
 
-	public void cargarClientes() {
-
-		ClienteCuentaCorriente cliente1 = new ClienteCuentaCorriente(111, "jorge tolaba", "jtolaba@gmail", "palpala");
-		listaClientes.add(cliente1);
-		ClienteGrandesCompras cliente2 = new ClienteGrandesCompras(dninumeroEncontradoRepetido(), "franco tolaba",
-				eMailEncontradorepetido(), "palpala");
-		listaClientes.add(cliente2);
-		ClienteCuentaCorriente cliente3 = new ClienteCuentaCorriente(333, "diego tolaba", "jtolaba@gmail", "palpala");
-		listaClientes.add(cliente3);
-		ClienteGrandesCompras cliente4 = new ClienteGrandesCompras(444, "juan murillo", "jtolaba@gmail", "palpala");
-		listaClientes.add(cliente4);
-		ClienteGrandesCompras cliente5 = new ClienteGrandesCompras(dninumeroEncontradoRepetido(), "mario tolaba",
-				"jtolaba@gmail", "palpala");
-		listaClientes.add(cliente5);
-
-		for (Cliente cliente : listaClientes)
-			System.out.println(cliente);
-	}
+//	public void cargarClientes() {
+//
+//		ClienteCuentaCorriente cliente1 = new ClienteCuentaCorriente(111, "jorge tolaba", "jtolaba@gmail", "palpala");
+//		listaClientes.add(cliente1);
+//		ClienteGrandesCompras cliente2 = new ClienteGrandesCompras(dninumeroEncontradoRepetido(), "franco tolaba",
+//				eMailEncontradorepetido(), "palpala");
+//		listaClientes.add(cliente2);
+//		ClienteCuentaCorriente cliente3 = new ClienteCuentaCorriente(333, "diego tolaba", "jtolaba@gmail", "palpala");
+//		listaClientes.add(cliente3);
+//		ClienteGrandesCompras cliente4 = new ClienteGrandesCompras(444, "juan murillo", "jtolaba@gmail", "palpala");
+//		listaClientes.add(cliente4);
+//		ClienteGrandesCompras cliente5 = new ClienteGrandesCompras(dninumeroEncontradoRepetido(), "mario tolaba",
+//				"jtolaba@gmail", "palpala");
+//		listaClientes.add(cliente5);
+//
+//		for (Cliente cliente : listaClientes)
+//			System.out.println(cliente);
+//	}
 
 	public void registrarCompras() {
 

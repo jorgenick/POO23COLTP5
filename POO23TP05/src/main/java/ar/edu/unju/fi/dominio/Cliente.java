@@ -1,5 +1,7 @@
 package ar.edu.unju.fi.dominio;
 
+import java.util.ArrayList;
+
 public abstract class Cliente {
 	// JORGE
 /**
@@ -12,10 +14,14 @@ public abstract class Cliente {
 	private String nombre;
 	private String eMail;
 	private String localidad;
-	private String jot;
-	private int di;
-
+	
+	
+	private Compra compra = new Compra();
+	
+	private ArrayList<Compra> listaDeCompras = new ArrayList<Compra>();
+	
 	private static int next_Id = 1;
+	
 
 	public Cliente() {
 
@@ -29,6 +35,10 @@ public abstract class Cliente {
 		this.nombre = nombre;
 		this.eMail = eMail;
 		this.localidad = localidad;
+//		this.compra = compra;
+////		this.listaDeCompras = listaDeCompras;
+//		listaDeCompras.add(compra);
+		
 	}
 
 	public int getId() {
@@ -77,6 +87,28 @@ public abstract class Cliente {
 
 	public static void setNext_Id(int next_Id) {
 		Cliente.next_Id = next_Id;
+	}
+
+	
+	public ArrayList<Compra> getListaDeCompras() {
+		return listaDeCompras;
+	}
+
+	public void setListaDeCompras(ArrayList<Compra> listaDeCompras) {
+		this.listaDeCompras = listaDeCompras;
+	}
+	
+	
+	public Compra getCompra() {
+		return compra;
+	}
+
+	public void setCompra(Compra compra) {
+		this.compra = compra;
+	}
+
+	public void agregarCompra(Compra compra) {
+		listaDeCompras.add(compra);
 	}
 
 	@Override
