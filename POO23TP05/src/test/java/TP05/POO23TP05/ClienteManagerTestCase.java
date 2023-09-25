@@ -36,17 +36,14 @@ class ClienteManagerTestCase {
 	ArrayList<Compra> listaDeCompras;
 	ArrayList<Cliente> listaClientes;
 	
-	@AfterEach
+	@BeforeEach
 	void hacerAntes() {
 	compra1 = new Compra(2,LocalDate.of(2023, 9, 24),20000d);
-//		listaDeCompras.add(compra1);
 		try {
-			
 			cliente1 = new ClienteGrandesCompras(11111,"Jorge Tolaba","jtolaba@gmail","PALPALA");	
-			
-			
-			System.out.println(cliente1.getListaDeCompras().size());
-			
+			cliente2 = new ClienteGrandesCompras(2222,"franco Tolaba","jtolaba@gmail","PALPALA");
+			cliente3 = new ClienteGrandesCompras(11111,"diego Tolaba","jtolaba@gmail","PALPALA");
+			listaClientes = new ArrayList<Cliente>();
 		}
 		catch (NullPointerException e){
 			System.out.println("HUBO UN ERROR");
@@ -57,20 +54,32 @@ class ClienteManagerTestCase {
 		}
 
 	}
+	
+	@Test
+	void registrarCliente() {
+		
+		clienteManager.agregarCienteNuevo(cliente1, listaClientes);
+		System.out.println("lista ="+listaClientes.size());
+		clienteManager.agregarCienteNuevo(cliente2, listaClientes);
+		System.out.println("lista ="+listaClientes.size());
+		clienteManager.agregarCienteNuevo(cliente1, listaClientes);
+		System.out.println("lista ="+listaClientes.size());
+		
+		System.out.println(listaClientes.get(0).getNombre());
+		System.out.println(listaClientes.get(1).getNombre());
+		
+	}
 
 	@Test
-	void agregarCompras() {
-		cliente1 = new ClienteGrandesCompras(11111,"Jorge Tolaba","jtolaba@gmail","PALPALA");
-
-		cliente1.getListaDeCompras().add(compra1);
+	void cantidadComprassDeUnCliente() {
 		cliente1.agregarCompra(compra1);
 		cliente1.agregarCompra(compra1);
-//		
+		cliente1.agregarCompra(compra1);
 		assertEquals(3, cliente1.getListaDeCompras().size());
 	}
 	
 	
-	@BeforeEach
+	@AfterEach
 	void hacerDespues(){
 		
 		

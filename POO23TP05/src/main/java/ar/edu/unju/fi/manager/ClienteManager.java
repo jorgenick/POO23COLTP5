@@ -2,8 +2,11 @@ package ar.edu.unju.fi.manager;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
+
+import org.apache.log4j.Logger;
 
 import ar.edu.unju.fi.dominio.Cliente;
 import ar.edu.unju.fi.dominio.ClienteCuentaCorriente;
@@ -14,6 +17,8 @@ public class ClienteManager {
 
 	private static List<Cliente> listaClientes = new ArrayList<Cliente>();
 	private static List<Compra> listaCompras = new ArrayList<Compra>();
+	
+	final static Logger logger = Logger.getLogger(ClienteManager.class);
 
 //	public void cargarClientes() {
 //
@@ -201,5 +206,64 @@ public class ClienteManager {
 		return null;
 
 	}
+	
+	
+	public long dniRepetido() {
 
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("ingrese DNI");
+		long dni = scanner.nextLong();
+
+		boolean hayRepetidos = false;
+		boolean numeroEncontrado = false;
+
+		while (numeroEncontrado == false) {
+			for (Cliente cliente : listaClientes)
+				if (cliente.getDni() == dni)
+					hayRepetidos = true;
+
+			if (hayRepetidos == false) {
+				System.out.println("dni cargado exitosamente!");
+				numeroEncontrado = true;
+				return dni;
+			} else {
+				System.out.println("El dni ya existe en la base de datos ingrese otro numero de DNI");
+				dni = scanner.nextLong();
+				hayRepetidos = false;
+			}
+		}
+		return dni;
+	}
+
+	
+	public static void agregarCienteNuevo(Cliente cliente, List<Cliente> listaCliente) {
+		
+		boolean existe = false;
+		
+		if (listaCliente.size() == 0) {
+			
+			listaCliente.add(cliente);
+			System.out.println("la lista estaba vacia y se agrego cliente");
+			
+		} else {
+			
+			for (Cliente cliente2 : listaCliente) {
+				if (cliente2.getDni() == cliente.getDni()) {
+					existe = true;
+				}
+			}
+			
+			if (existe == true) {
+				System.out.println("cliente existente en base de datos");
+			} else {
+				System.out.println("cliente agregado con exito");
+				listaCliente.add(cliente);
+
+			}
+			
+		}
+
+
+	}
+		
 }
