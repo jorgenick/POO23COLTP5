@@ -11,6 +11,10 @@ public class Compra {
 	public Compra() {
 		super();
 	}
+	
+	public Compra( double importe) {
+		this.importe=importe;
+	}
 
 	public Compra(int id, LocalDate fecha, double importe) {
 		super();

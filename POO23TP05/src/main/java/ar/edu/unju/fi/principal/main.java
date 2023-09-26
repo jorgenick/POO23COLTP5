@@ -18,7 +18,7 @@ public class main {
 		
 //		System.out.println("col");
 		
-//		logger.debug("mi primer logs jorge");
+		logger.debug("mi primer logs jorge");
 
 //		clienteManager.registrarCliente();
 

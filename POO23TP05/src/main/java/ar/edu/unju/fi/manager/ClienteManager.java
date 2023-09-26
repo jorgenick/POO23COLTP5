@@ -2,22 +2,20 @@ package ar.edu.unju.fi.manager;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
 import ar.edu.unju.fi.dominio.Cliente;
-import ar.edu.unju.fi.dominio.ClienteCuentaCorriente;
-import ar.edu.unju.fi.dominio.ClienteGrandesCompras;
 import ar.edu.unju.fi.dominio.Compra;
+import ar.edu.unju.fi.exception.ClienteException;
 
 public class ClienteManager {
 
 	private static List<Cliente> listaClientes = new ArrayList<Cliente>();
 	private static List<Compra> listaCompras = new ArrayList<Compra>();
-	
+
 	final static Logger logger = Logger.getLogger(ClienteManager.class);
 
 //	public void cargarClientes() {
@@ -206,8 +204,7 @@ public class ClienteManager {
 		return null;
 
 	}
-	
-	
+
 	public long dniRepetido() {
 
 		Scanner scanner = new Scanner(System.in);
@@ -235,35 +232,75 @@ public class ClienteManager {
 		return dni;
 	}
 
-	
-	public static void agregarCienteNuevo(Cliente cliente, List<Cliente> listaCliente) {
-		
+	public static void agregarCienteNuevo(Cliente cliente, List<Cliente> listaCliente) throws ClienteException {
+
 		boolean existe = false;
-		
+
 		if (listaCliente.size() == 0) {
-			
+
 			listaCliente.add(cliente);
-			System.out.println("la lista estaba vacia y se agrego cliente");
-			
+			logger.info("la lista estaba vacia y se agrego cliente");
+
 		} else {
-			
-			for (Cliente cliente2 : listaCliente) {
-				if (cliente2.getDni() == cliente.getDni()) {
-					existe = true;
+
+			if (listaCliente.size() == 4) {
+
+				throw new ClienteException("ERROR-- NO PUEDE CARGAR MAS DE 4 CLIENTES");
+
+			} else {
+				for (Cliente cliente2 : listaCliente) {
+					if (cliente2.getDni() == cliente.getDni()) {
+						existe = true;
+					}
+				}
+
+				if (existe == true) {
+					logger.info("cliente existente en base de datos");
+				} else {
+					logger.info("cliente agregado con exito");
+					listaCliente.add(cliente);
+
 				}
 			}
-			
-			if (existe == true) {
-				System.out.println("cliente existente en base de datos");
-			} else {
-				System.out.println("cliente agregado con exito");
-				listaCliente.add(cliente);
 
-			}
-			
 		}
 
-
 	}
+	
+//	int id, LocalDate fecha, double importe, List<Cliente> listaClientes
+	
+	public static void registrarCompra(List<Cliente> listaClientes) {
 		
+		System.out.println("--------LISTAS DE CLIENTES--------");
+		for (Cliente cliente : listaClientes) {
+			System.out.println(cliente);
+		}
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("ingrese un ID de cliente para registrar una compra");
+		
+		int idCliente = scanner.nextInt();
+		
+		logger.debug("tamaño de lista de compras del cliente antes de ser cargada = " +listaClientes.get(0).getListaDeCompras().size());
+		
+		for (Cliente cliente : listaClientes) {
+			if (idCliente == cliente.getId()) {
+//				System.out.println("ingrese fecha");
+				
+				cliente.getListaDeCompras().add(new Compra(500d));
+				cliente.getListaDeCompras().add(new Compra(500d));
+				cliente.getListaDeCompras().add(new Compra(500d));
+			}
+		}
+		
+		logger.debug("tamaño de lista de compras del cliente despues de ser cargada = " +listaClientes.get(0).getListaDeCompras().size());
+		
+		
+		
+		
+		
+	}
+	
+
 }

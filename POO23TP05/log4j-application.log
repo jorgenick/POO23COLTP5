@@ -1,0 +1,141 @@
+2023-09-25 19:46:53 DEBUG main:21 - mi primer logs jorge
+2023-09-25 20:07:01 DEBUG main:21 - mi primer logs jorge
+2023-09-25 20:16:16 INFO  ClienteManagerTestCase:68 - lista =1
+2023-09-25 20:16:16 INFO  ClienteManagerTestCase:70 - lista =2
+2023-09-25 20:16:16 INFO  ClienteManagerTestCase:72 - lista =2
+2023-09-25 20:17:07 INFO  ClienteManager:244 - la lista estaba vacia y se agrego cliente
+2023-09-25 20:17:07 INFO  ClienteManagerTestCase:68 - lista =1
+2023-09-25 20:17:07 INFO  ClienteManager:257 - cliente agregado con exito
+2023-09-25 20:17:07 INFO  ClienteManagerTestCase:70 - lista =2
+2023-09-25 20:17:07 INFO  ClienteManager:255 - cliente existente en base de datos
+2023-09-25 20:17:07 INFO  ClienteManagerTestCase:72 - lista =2
+2023-09-25 20:31:20 INFO  ClienteManager:244 - la lista estaba vacia y se agrego cliente
+2023-09-25 20:31:20 INFO  ClienteManagerTestCase:68 - lista =1
+2023-09-25 20:31:20 INFO  ClienteManager:257 - cliente agregado con exito
+2023-09-25 20:31:20 INFO  ClienteManagerTestCase:70 - lista =2
+2023-09-25 20:31:20 INFO  ClienteManager:255 - cliente existente en base de datos
+2023-09-25 20:31:20 INFO  ClienteManagerTestCase:72 - lista =2
+2023-09-25 20:31:43 INFO  ClienteManager:244 - la lista estaba vacia y se agrego cliente
+2023-09-25 20:31:43 INFO  ClienteManagerTestCase:68 - lista =1
+2023-09-25 20:31:43 INFO  ClienteManager:257 - cliente agregado con exito
+2023-09-25 20:31:43 INFO  ClienteManagerTestCase:70 - lista =2
+2023-09-25 20:31:43 INFO  ClienteManager:255 - cliente existente en base de datos
+2023-09-25 20:31:43 INFO  ClienteManagerTestCase:72 - lista =2
+2023-09-25 20:31:53 INFO  ClienteManager:244 - la lista estaba vacia y se agrego cliente
+2023-09-25 20:31:53 INFO  ClienteManagerTestCase:68 - lista =1
+2023-09-25 20:31:53 INFO  ClienteManager:257 - cliente agregado con exito
+2023-09-25 20:31:53 INFO  ClienteManagerTestCase:70 - lista =2
+2023-09-25 20:31:53 INFO  ClienteManager:255 - cliente existente en base de datos
+2023-09-25 20:31:53 INFO  ClienteManagerTestCase:72 - lista =2
+2023-09-25 20:33:02 INFO  ClienteManager:244 - la lista estaba vacia y se agrego cliente
+2023-09-25 20:33:02 INFO  ClienteManagerTestCase:68 - lista =1
+2023-09-25 20:33:02 INFO  ClienteManager:257 - cliente agregado con exito
+2023-09-25 20:33:02 INFO  ClienteManagerTestCase:70 - lista =2
+2023-09-25 20:33:02 INFO  ClienteManager:255 - cliente existente en base de datos
+2023-09-25 20:33:02 INFO  ClienteManagerTestCase:72 - lista =2
+2023-09-25 20:33:55 INFO  ClienteManager:244 - la lista estaba vacia y se agrego cliente
+2023-09-25 20:33:55 INFO  ClienteManagerTestCase:68 - lista =1
+2023-09-25 20:33:55 INFO  ClienteManager:257 - cliente agregado con exito
+2023-09-25 20:33:55 INFO  ClienteManagerTestCase:70 - lista =2
+2023-09-25 20:33:55 INFO  ClienteManager:255 - cliente existente en base de datos
+2023-09-25 20:33:55 INFO  ClienteManagerTestCase:72 - lista =2
+2023-09-25 20:49:59 DEBUG ClienteManager:281 - tamaño de lista de compras del cliente antes de ser cargada0
+2023-09-25 20:51:06 DEBUG ClienteManager:281 - tamaño de lista de compras del cliente antes de ser cargada = 0
+2023-09-25 20:51:06 DEBUG ClienteManager:291 - tamaño de lista de compras del cliente despues de ser cargada = 1
+2023-09-25 20:51:24 DEBUG ClienteManager:281 - tamaño de lista de compras del cliente antes de ser cargada = 0
+2023-09-25 20:51:24 DEBUG ClienteManager:291 - tamaño de lista de compras del cliente despues de ser cargada = 0
+2023-09-25 20:51:39 DEBUG ClienteManager:281 - tamaño de lista de compras del cliente antes de ser cargada = 0
+2023-09-25 20:51:39 DEBUG ClienteManager:293 - tamaño de lista de compras del cliente despues de ser cargada = 0
+2023-09-25 20:51:43 DEBUG ClienteManager:281 - tamaño de lista de compras del cliente antes de ser cargada = 0
+2023-09-25 20:51:43 DEBUG ClienteManager:293 - tamaño de lista de compras del cliente despues de ser cargada = 3
+2023-09-25 21:20:28 INFO  ClienteManager:244 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:20:28 INFO  ClienteManagerTestCase:69 - lista =1
+2023-09-25 21:20:28 INFO  ClienteManager:257 - cliente agregado con exito
+2023-09-25 21:20:28 INFO  ClienteManagerTestCase:71 - lista =2
+2023-09-25 21:20:28 INFO  ClienteManager:255 - cliente existente en base de datos
+2023-09-25 21:20:28 INFO  ClienteManagerTestCase:73 - lista =2
+2023-09-25 21:26:02 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:26:02 INFO  ClienteManagerTestCase:69 - lista =1
+2023-09-25 21:26:02 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:26:02 INFO  ClienteManagerTestCase:71 - lista =2
+2023-09-25 21:26:02 INFO  ClienteManager:260 - cliente existente en base de datos
+2023-09-25 21:26:02 INFO  ClienteManagerTestCase:73 - lista =2
+2023-09-25 21:26:18 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:26:18 INFO  ClienteManagerTestCase:69 - lista =1
+2023-09-25 21:26:18 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:26:18 INFO  ClienteManagerTestCase:71 - lista =2
+2023-09-25 21:26:18 INFO  ClienteManager:260 - cliente existente en base de datos
+2023-09-25 21:26:18 INFO  ClienteManagerTestCase:73 - lista =2
+2023-09-25 21:27:01 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:27:01 INFO  ClienteManagerTestCase:70 - lista =1
+2023-09-25 21:27:01 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:27:01 INFO  ClienteManagerTestCase:72 - lista =2
+2023-09-25 21:27:01 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:27:01 INFO  ClienteManagerTestCase:74 - lista =3
+2023-09-25 21:27:42 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:27:42 INFO  ClienteManagerTestCase:70 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:27:42 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:27:42 INFO  ClienteManagerTestCase:72 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:27:42 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:27:42 INFO  ClienteManagerTestCase:74 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:28:00 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:28:00 INFO  ClienteManagerTestCase:70 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:28:00 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:28:00 INFO  ClienteManagerTestCase:72 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:28:00 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:28:00 INFO  ClienteManagerTestCase:74 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:30:04 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:30:04 INFO  ClienteManagerTestCase:73 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:30:04 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:30:04 INFO  ClienteManagerTestCase:75 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:30:04 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:30:04 INFO  ClienteManagerTestCase:77 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:30:45 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:30:45 INFO  ClienteManagerTestCase:73 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:30:45 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:30:45 INFO  ClienteManagerTestCase:75 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:30:45 INFO  ClienteManager:262 - cliente agregado con exito
+2023-09-25 21:30:45 INFO  ClienteManagerTestCase:77 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:32:08 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:32:08 INFO  ClienteManagerTestCase:73 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:32:08 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:32:08 INFO  ClienteManagerTestCase:75 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:32:08 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:32:08 INFO  ClienteManagerTestCase:77 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:32:59 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:32:59 INFO  ClienteManagerTestCase:73 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:32:59 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:32:59 INFO  ClienteManagerTestCase:75 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:32:59 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:32:59 INFO  ClienteManagerTestCase:77 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:33:14 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:33:14 INFO  ClienteManagerTestCase:73 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:33:14 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:33:14 INFO  ClienteManagerTestCase:75 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:33:14 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:33:14 INFO  ClienteManagerTestCase:77 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:33:14 INFO  ClienteManager:258 - cliente existente en base de datos
+2023-09-25 21:33:14 INFO  ClienteManagerTestCase:79 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:33:26 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:33:26 INFO  ClienteManagerTestCase:73 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:33:26 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:33:26 INFO  ClienteManagerTestCase:75 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:33:26 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:33:26 INFO  ClienteManagerTestCase:77 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:35:31 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:35:31 INFO  ClienteManagerTestCase:73 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:35:31 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:35:31 INFO  ClienteManagerTestCase:75 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:35:31 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:35:31 INFO  ClienteManagerTestCase:77 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:35:31 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:35:31 INFO  ClienteManagerTestCase:79 - CANTIDAD DE CLIENTES CARGADOS =4
+2023-09-25 21:36:13 INFO  ClienteManager:242 - la lista estaba vacia y se agrego cliente
+2023-09-25 21:36:13 INFO  ClienteManagerTestCase:74 - listCANTIDAD DE CLIENTES CARGADOS =1
+2023-09-25 21:36:13 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:36:13 INFO  ClienteManagerTestCase:76 - CANTIDAD DE CLIENTES CARGADOS =2
+2023-09-25 21:36:13 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:36:13 INFO  ClienteManagerTestCase:78 - CANTIDAD DE CLIENTES CARGADOS =3
+2023-09-25 21:36:13 INFO  ClienteManager:260 - cliente agregado con exito
+2023-09-25 21:36:13 INFO  ClienteManagerTestCase:80 - CANTIDAD DE CLIENTES CARGADOS =4
+2023-09-25 21:36:13 ERROR ClienteManagerTestCase:89 - ERROR-- NO PUEDE CARGAR MAS DE 4 CLIENTES
